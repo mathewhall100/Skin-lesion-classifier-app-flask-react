@@ -3,7 +3,6 @@ data/*
 **/.ipynb_checkpoints/
 # Models files too large to push to github
 # Uploaded to github releases instead and downloaded as required
-models/
 models/classes.txt
 models/model.pkl
 .idea

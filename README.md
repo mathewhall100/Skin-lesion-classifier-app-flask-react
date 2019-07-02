@@ -38,7 +38,7 @@ The applicatuion was deployed in a Docker container on heroku. Deployment detail
 ## To run locally
 
 1) Clone repo to local computer.
-2) Note that the densenet model file (model.pkl) is too large to push to github repo so it is stored in github release. You will need to create a new 'models' folder in the app root directory and then download classes.txt and model.pkl from this repo's github/release (https://github.com/mathewhall100/Skin-lesion-classifier-flask-react/release) to the new 'models' folder where the app can find them.
+2) Note that the densenet model file (model.pkl) is too large to push to github repo so it is stored as a github release. You will need to download classes.txt and model.pkl from this repo's github/releases (https://github.com/mathewhall100/Skin-lesion-classifier-flask-react/releases/tag/v1.0) to the 'models' folder where the app can find them. Instructions here: [models\README.md](models\README.md)
 3) Go to app.py. Make sure the code for 'local deployment' is uncommented and the code for 'heroku deployment' is commented out. 
 4) Install dependencies - torch==1.1.0, torchvision==0.2.1, Flask==1.0.2,  fastai==1.0.54. It is important to install the correct versions as they must match exactly the versions used to create the model.pkl file otherwise version errors may result. The quickest way to install the dependencies is to run the following from the command line: 
 ```
