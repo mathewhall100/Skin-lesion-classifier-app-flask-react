@@ -28,6 +28,9 @@ A web app was built to display the working model using Flask as the server and r
 
 The applicatuion was deployed in a Docker container on heroku. Deployment details here [docs\2_heroku_app.md](https://github.com/mathewhall100/Skin-lesion-classifier-flask-react/blob/master/docs/1_training.md)
 
+For mobile: [https://skin-lesion-web-classifier.herokuapp.com/](https://skin-lesion-web-classifier.herokuapp.com/)
+
+<img src="images\skin_app_image_2.PNG" width="250">
 
 ## Disclaimer
 
@@ -59,7 +62,7 @@ The image will appear in the image frame. Click 'predict' to begin the predictio
 
 > Data obtained from https://www.isic-archive.com/
 
->Code based on Pattaniyil, Nidhin and Shaikh, Reshama, [Deploying Deep Learning Models On Web And Mobile](https://reshamas.github.io/deploying-deep-learning-models-on-web-and-mobile/), 2019
+>Code adapted from Pattaniyil, Nidhin and Shaikh, Reshama, [Deploying Deep Learning Models On Web And Mobile](https://reshamas.github.io/deploying-deep-learning-models-on-web-and-mobile/), 2019
 
 
 
