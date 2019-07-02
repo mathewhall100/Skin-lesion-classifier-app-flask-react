@@ -1,9 +1,10 @@
 # Skin Lesion Classifier 
 ## Deep learning model deployed as a web app using flask and react
+<br />
+ 
+<img src="images\skin_app_image_1.PNG" width="600">
 
-<img src="images\skin_app_image_1.PNG" width="400">
-
-[App](https://skin-lesion-web-classifier.herokuapp.com/)
+[https://skin-lesion-web-classifier.herokuapp.com/](https://skin-lesion-web-classifier.herokuapp.com/)
 
 ## Model
 
@@ -21,17 +22,23 @@ This gives a sensitivity and specificity of:
 
 [More details at docs\1_training.md](.\docs\1_training.md)
 
+## App
+
+A web app was built to display the working model using Flask as the server and react as the frontend framework. Flask server code was adapted from on Pattaniyil, Nidhin and Shaikh, Reshama, [Deploying Deep Learning Models On Web And Mobile](https://reshamas.github.io/. Reactstrap component library was used throughout. To speed prototyping no build system was used.
+
+The applicatuion was deployed in a Docker container on heroku. Deployment details here [docs\2_heroku_app.md](docs\2_heroku_app.md)
+
+
 ## Disclaimer
 
-
-Note that this app is not FDA approved, nor is it endorsed by any physician or hospital. It is intended for experiment and demonstration purposes only and should not be used to provide any medical guidance or advice whatsoever.
+**Note that this app is not FDA approved, nor is it endorsed by any physician or hospital. It is intended for experiment and demonstration purposes only and should not be used to provide any medical guidance or advice whatsoever.**
 
 
 
 ## To run locally
 
 1) Clone repo to local computer.
-2) Note that the densenet model file (model.pkl) is too large to push to github repo so it is stored in github releases. You will need to create a 'models' folder in the app root directory and then download classes.txt and moel.pkl from github/releases to the models folder where the app can find them.
+2) Note that the densenet model file (model.pkl) is too large to push to github repo so it is stored in github release. You will need to create a new 'models' folder in the app root directory and then download classes.txt and model.pkl from this repo's github/release (https://github.com/mathewhall100/Skin-lesion-classifier-flask-react/release) to the new 'models' folder where the app can find them.
 3) Go to app.py. Make sure the code for 'local deployment' is uncommented and the code for 'heroku deployment' is commented out. 
 4) Install dependencies - torch==1.1.0, torchvision==0.2.1, Flask==1.0.2,  fastai==1.0.54. It is important to install the correct versions as they must match exactly the versions used to create the model.pkl file otherwise version errors may result. The quickest way to install the dependencies is to run the following from the command line: 
 ```
