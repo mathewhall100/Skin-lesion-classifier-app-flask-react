@@ -1,0 +1,55 @@
+title: Skin Lesion Classifier Powered by Deep Learning
+description: Classify skin lesions as malignant or benign.
+about:
+
+  App to classify skin lesions as either malignant of benign. 
+
+
+  Training images obtained from the ISIC Skin Lesion Archive (https://www.isic-archive.com). 
+
+   
+  Model trained using the Fastai Deep Learning library (https://docs.fast.ai) built on top of Pytorch (https://pytorch.org/docs/stable/index.html).
+
+
+  Acknowledgements to Nidhin Pattaniyil (https://npatta01.github.io) and Reshama Shaikh (https://reshamas.github.io) for example code (https://github.com/npatta01/web-deep-learning-classifier) on which this project was based. 
+
+
+  Released under the MIT license (https://opensource.org/licenses/MIT) 2019.
+
+
+  Not for medical use
+
+
+code: 
+
+  Model (jupyter notebook) - https://github.com/mathewhall100/ISIC-skin-lesion-identification
+
+
+  App - https://github.com/mathewhall100/ISIC-skin-lesion-ID-app
+
+
+skinLesionSampleImages:
+  - name: melanoma_sample_1
+    diagnosis: malignant melanoma
+    url: http://www.saddlebackvalleysurgery.com/i//melanoma.jpg
+  - name: melanoma_sample_2
+    diagnosis: malignant melanoma
+    url: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Melanoma.jpg/300px-Melanoma.jpg
+  - name: melanoma_sample_3
+    diagnosis: malignant melanoma
+    url: http://orshospital.rs/img/promene-na-kozi/melanom_3_zoom.jpg
+  - name: melanoma_sample_4
+    diagnosis: malignant melanoma
+    url: https://cdn1.medicalnewstoday.com/content/images/articles/319/319173/melanoma.jpg
+  - name: nevus_sample_1
+    diagnosis: benign nevus
+    url: https://images-prod.healthline.com/hlcmsresource/images/galleries/nevus/unna_nevus-648x364-slide6.jpg
+  - name: nevus_sample_2
+    diagnosis: benign nevus
+    url: https://1z7e071dqqoxnc7wm2aysub2-wpengine.netdna-ssl.com/wp-content/uploads/sites/20/2019/03/ch933.fig2_.jpg
+  - name: nevus_sample_3
+    diagnosis: benign nevus
+    url: https://skindoctorinlondon.weebly.com/uploads/5/0/3/9/50392099/7001038_orig.jpeg
+  - name: nevus_sample_4
+    diagnosis: benign nevus
+    url: https://previews.123rf.com/images/obencem/obencem1704/obencem170400020/75478050-close-up-photo-of-nevus-on-human-skin.jpg

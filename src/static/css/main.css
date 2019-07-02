@@ -1,0 +1,151 @@
+/* General */
+html, body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f6f6f6;
+}
+.body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0; 
+}
+.content {
+    flex: 1 0 auto;
+    padding-bottom: 30px;
+    min-width: 360px
+}
+.content-title {
+    margin: 30px 0 30px 10px
+}
+
+/* Toggle web and mobile content */
+.web {
+    display: block;
+}
+.mobile {
+    display: none;
+}
+
+/* Web navbar styles */
+.navbar {
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+/* Web navbar image sizing */
+.crop-container {
+    overflow: hidden;
+}
+.crop-container img {
+    margin: -40px 0 -105px 0; 
+}
+.navbar-image {
+    height: 100%;
+    width: 400px
+}
+
+/* Web navbar text */
+.navbar-brand {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+    padding: 0 20px
+}
+.navbar-brand:hover {
+    color: white;
+}
+.nav-link {
+    color: white;
+    font-size: 18px
+}
+.nav-link:hover {
+    color: white;
+    background-color: grey;
+}
+
+@media screen and (max-width: 600px) {
+    /* Toggle web and mobile content */
+    .web {
+        display: none;
+    }
+    .mobile {
+        width: 100%;
+        margin: 0;
+        display: block;
+    }
+
+    .mobile-title {
+        text-align: center
+    }
+
+    /* Mobile banner image and text sizing */
+    .crop-container {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+    .crop-container img {
+        margin: 0 0 -10px 0;
+    }
+    .banner-text {
+        margin-left: 16px;
+        position: absolute;
+        top: 60px;
+        font-family: "lucida console", monospace;
+    }
+    .banner-title {
+        font-size: 26px;
+        font-weight: bold
+    }
+    .banner-subtitle {
+        font-size: 13px;
+    }
+
+    /* mobile navigation styleing */
+    .mobile-nav {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        text-decoration: none;
+        background-color: #333;
+    }
+    .mobile-nav li {
+        border-bottom: 1px solid #444;
+    }
+    .mobile-nav li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        text-decoration: none;
+        font-size: 18px
+    }
+    .mobile-nav li :hover:not(.active) {
+        background-color: #111;
+    }
+    .mobile-nav li .active {
+        background-color: #4CAF50;
+    }
+}
+
+/* footer styles */
+.footer {
+    flex-shrink: 0;
+    height: 60px;
+    width: 100%;
+    margin: 0 auto;
+    border-top: 2px solid #333;
+    background-color: #f6f6f6
+}
+.footer p {
+    color: #333;
+    text-align: center;
+    font-size: 16px
+}
+.footer p span {
+    font-size: 20px
+}
+

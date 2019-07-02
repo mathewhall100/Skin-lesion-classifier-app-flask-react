@@ -1,0 +1,107 @@
+/* Column layout */
+.col1-margins {
+    margin-right: 30px
+}
+.col2-margins .col3-margins {
+    margin-right: 0px
+}
+.col2-title {
+    margin-bottom: 15px
+}
+
+/* Col1 - Sample images column */
+
+.samples-container {
+    min-width: 250px;
+    min-height: 500px;
+    border: 2px solid grey;
+    padding: 0
+}
+.sampleImg {
+    padding: 0;
+    border: 2px solid grey
+}
+
+/* Col2 - Upload, display selected image and predict */
+#upload_button input[type=file] {
+    display:none;
+}
+.btn-upload {
+    cursor: pointer
+}
+
+.img-container {
+    width: 260px;
+    height: 266px;
+    border: 5px solid #F8F8F8;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px
+}
+
+.img-preview {
+    width: 250px;
+    height: 256px;
+    position: relative;
+}
+.spinner {
+    width: 3rem;
+    height: 3rem; 
+    position: relative; 
+    top: -220px;
+    left: 100px
+}
+
+/* Col3 - display results */
+.result-display {
+    padding-left: 0
+}
+.result-display td {
+    font-size: 20px;
+    min-width: 120px
+}
+
+/* Description text */
+.description-text {
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 13px;
+    text-align: justify
+}
+
+@media screen and (max-width: 600px) {
+    .samples-container {
+        min-height: 130px;
+        max-height: 130px;
+        overflow: scroll
+    }
+    .content-title {
+        text-align: center
+    }
+    .container {
+        text-align: center
+    }
+    .col1-margins {
+        margin-right: 0
+    }
+    .col2-title {
+        margin: 15px 0 15px -15px
+    }
+    .img-container {
+        margin: 1em auto
+    }
+    .spinner {
+        width: 3rem;
+        height: 3rem; 
+        position: relative; 
+        top: -220px;
+        left: 0
+    }
+    .result-display {
+        text-align: left
+    }
+    .result-display td {
+        font-size: 19px
+    }
+}
+
+
