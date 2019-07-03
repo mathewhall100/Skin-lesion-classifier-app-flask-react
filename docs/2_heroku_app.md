@@ -73,6 +73,8 @@ Make sure you have added and committed all files to github. Then,
     APP_NAME="Skin-lesion-web-classifier"
     heroku create $APP_NAME
 
+    heroku stack:set container --app $APP_NAME
+
     git push heroku master
 ```
 
