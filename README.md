@@ -8,14 +8,14 @@
 
 ## Model
 
-Images of benign and malignant skin lesions were downloaded from the ISIC Skin Lesion Archive (https://www.isic-archive.com) and pre-processed using ImageMagick. A densenet161 model was trained on 5000 images using the fastai deep learning library (https://docs.fast.ai/) and validated on a subset of 20% total images. The model achieved an acccuracy of 88% correctly classifying benign from malignant lesions. 
+Images of benign and malignant skin lesions were downloaded from the ISIC Skin Lesion Archive (https://www.isic-archive.com) and pre-processed using ImageMagick. A densenet161 model was trained on 5000 images using the fastai deep learning library (https://docs.fast.ai/) and validated on a subset of 20% total images.
 
-The model achieved 88% accuracy on a validation set
-Of the misscklassified lesions: 
+The model achieved 88% accuracy on validation data.
+Of the missclassified lesions: 
 * 76 out of 423 malignant melanoma were missclassified as benign nevi
 * 44 out of 594 benign nevi were missclassified as malignant melanoma 
 
-This gives a sensitivity and specificity of: 
+This gives: 
 
 * sensitivity: 82.0%
 * specificity: 92.6%
@@ -24,13 +24,13 @@ This gives a sensitivity and specificity of:
 
 ## App
 
-A web app was built to display the working model using Flask as the server and react as the frontend framework. Flask server code was adapted from on Pattaniyil, Nidhin and Shaikh, Reshama, [Deploying Deep Learning Models On Web And Mobile](https://reshamas.github.io/. Reactstrap component library was used throughout. To speed prototyping no build system was used.
+A web app was built to display the working model using a Flask server and react as the frontend framework. Flask server code was adapted from on Pattaniyil, Nidhin and Shaikh, Reshama, [Deploying Deep Learning Models On Web And Mobile](https://reshamas.github.io/. Reactstrap component library was used throughout. To speed prototyping no build system was used.
 
-The applicatuion was deployed in a Docker container on heroku. Deployment details here [docs\2_heroku_app.md](https://github.com/mathewhall100/Skin-lesion-classifier-flask-react/blob/master/docs/1_training.md)
+The application was deployed in a Docker container on Heroku. Deployment details here [docs\2_heroku_app.md](https://github.com/mathewhall100/Skin-lesion-classifier-flask-react/blob/master/docs/1_training.md)
 
 For mobile: [https://skin-lesion-web-classifier.herokuapp.com/](https://github.com/mathewhall100/Skin-lesion-classifier-flask-react/blob/master/docs/1_training.md)
 
-<img src="images\skin_app_image_2.PNG" width="250">
+<img src="images\skin_app_image_3.PNG" width="800">
 
 
 ## Disclaimer
@@ -41,10 +41,10 @@ For mobile: [https://skin-lesion-web-classifier.herokuapp.com/](https://github.c
 
 ## To run locally
 
-1) Clone repo to local computer.
+1) Clone this repo to local computer.
 2) Note that the densenet model file (model.pkl) is too large to push to github repo so it is stored as a github release. You will need to download classes.txt and model.pkl from this repo's github/releases (https://github.com/mathewhall100/Skin-lesion-classifier-flask-react/releases/tag/v1.0) to the 'models' folder where the app can find them. Instructions here: [models\README.md](https://github.com/mathewhall100/Skin-lesion-classifier-flask-react/blob/master/models/README.md)
 3) Go to app.py. Make sure the code for 'local deployment' is uncommented and the code for 'heroku deployment' is commented out. 
-4) Install dependencies - torch==1.1.0, torchvision==0.2.1, Flask==1.0.2,  fastai==1.0.54. It is important to install the correct versions as they must match exactly the versions used to create the model.pkl file otherwise version errors may result. The quickest way to install the dependencies is to run the following from the command line: 
+4) Install dependencies - torch v1.1.0, torchvision v0.2.1, Flask v1.0.2 and fastai v1.0.54. It is important to install the correct versions as they must match exactly the versions used to create the model.pkl file. The quickest way to install the dependencies is to run the following from the command line: 
 ```
     pip install -r requirements.txt
 ```
