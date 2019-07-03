@@ -15,25 +15,25 @@ import json
 
 
 # **** For heroku deployment ****
-with open("src/config.yaml", 'r') as stream:
-    APP_CONFIG = yaml.load(stream)
+# with open("src/config.yaml", 'r') as stream:
+#     APP_CONFIG = yaml.load(stream)
 
 # **** local deployment ****
-# with open("config.yaml", 'r') as stream:
-#     APP_CONFIG = yaml.load(stream)
+with open("config.yaml", 'r') as stream:
+    APP_CONFIG = yaml.load(stream)
 
 app = Flask(__name__)
 
 
 #  **** For heroku deployment ****
-def load_model(path=".", model_name="model.pkl"):
-    learn = load_learner("models", model_name)
-    return learn
+# def load_model(path=".", model_name="model.pkl"):
+#     learn = load_learner("models", model_name)
+#     return learn
 
 # **** local deployment ****
-# def load_model(path=".", model_name="model.pkl"):
-#     learn = load_learner("../models", model_name)
-#     return learn
+def load_model(path=".", model_name="model.pkl"):
+    learn = load_learner("../models", model_name)
+    return learn
 
 
 def load_image_url(url: str) -> Image:  # function annotation syntax 

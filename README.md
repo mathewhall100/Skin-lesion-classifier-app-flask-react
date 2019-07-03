@@ -28,6 +28,10 @@ A web app was built to display the working model using Flask as the server and r
 
 The applicatuion was deployed in a Docker container on heroku. Deployment details here [docs\2_heroku_app.md](https://github.com/mathewhall100/Skin-lesion-classifier-flask-react/blob/master/docs/1_training.md)
 
+For mobile: [https://skin-lesion-web-classifier.herokuapp.com/](https://github.com/mathewhall100/Skin-lesion-classifier-flask-react/blob/master/docs/1_training.md)
+
+<img src="images\skin_app_image_2.PNG" width="250">
+
 
 ## Disclaimer
 
